@@ -24,6 +24,6 @@ public class SimpleUiController {
 
     @FXML
     public void initialize () {
-        this.button.setOnAction(actionEvent -> this.label.setText(this.hostServices.getDocumentBase()));
+      //  this.button.setOnAction(actionEvent -> this.label.setText(); //this.hostServices.getDocumentBase())
     }
 }
