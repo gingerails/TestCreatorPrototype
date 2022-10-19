@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    boolean existsByUserID(String UserID);
+    boolean existsByUserID(String userID);
 
     @Query("SELECT COUNT(u) FROM User u")
     Long getTotalUsers();
